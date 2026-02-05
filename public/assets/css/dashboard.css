@@ -1,0 +1,171 @@
+/**
+ * FlintGo - Dashboard Specific Styles
+ */
+
+/* ==================== Dashboard Layout ==================== */
+.dashboard-wrapper {
+    min-height: 100vh;
+}
+
+/* ==================== Hero Banner ==================== */
+.hero-banner {
+    background: linear-gradient(135deg, #10B981, #059669);
+}
+
+.wallet-info {
+    backdrop-filter: blur(10px);
+}
+
+/* ==================== Search Bar ==================== */
+.search-bar-wrapper {
+    position: relative;
+    z-index: 10;
+}
+
+.search-bar-wrapper .card {
+    border-radius: 16px;
+}
+
+.search-bar-wrapper .form-control {
+    font-size: 14px;
+}
+
+.search-bar-wrapper .form-control::placeholder {
+    color: #9CA3AF;
+}
+
+/* ==================== Services Grid ==================== */
+.services-grid {
+    margin-bottom: 20px;
+}
+
+.service-item {
+    display: block;
+    text-align: center;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+.service-item .service-icon {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-item .service-icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+}
+
+.service-name {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 8px;
+    color: var(--text-color);
+}
+
+/* ==================== Promo Section ==================== */
+.promo-section .card {
+    border-radius: 12px;
+    border: 2px solid var(--primary-color);
+}
+
+/* ==================== FlintPay Section ==================== */
+.flintpay-section .icon-wrapper {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==================== XP Progress ==================== */
+.xp-progress .progress {
+    background-color: #E5E7EB;
+    border-radius: 10px;
+}
+
+.xp-progress .progress-bar {
+    background: linear-gradient(90deg, #10B981, #059669);
+    border-radius: 10px;
+}
+
+/* ==================== Promo Carousel ==================== */
+.promo-slider .carousel-item img {
+    border-radius: 12px 12px 0 0;
+    height: 200px;
+    object-fit: cover;
+}
+
+.promo-slider .card {
+    overflow: hidden;
+}
+
+/* ==================== Recent Orders ==================== */
+.recent-orders .icon-wrapper {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+/* ==================== Responsive Adjustments ==================== */
+
+/* Mobile */
+@media (max-width: 767px) {
+    .hero-banner {
+        padding: 16px 0;
+    }
+    
+    .service-item .service-icon {
+        border-radius: 12px;
+    }
+    
+    .service-item .service-icon i {
+        font-size: 24px;
+    }
+    
+    .service-name {
+        font-size: 11px;
+    }
+    
+    .promo-slider .carousel-item img {
+        height: 160px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    .service-item .service-icon i {
+        font-size: 26px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+    .dashboard-wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+/* ==================== Bottom spacing for mobile nav ==================== */
+@media (max-width: 767px) {
+    .dashboard-wrapper {
+        padding-bottom: 80px;
+    }
+}
