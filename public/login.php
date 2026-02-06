@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../includes/init.php'; //dibuat dir
+require_once __DIR__ . '/../includes/init.php'; //dibuat dir agar
 
 // Redirect if already logged in
 if(isLoggedIn()) {
