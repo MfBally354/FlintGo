@@ -4,7 +4,9 @@
  * Handles new user registration
  */
 
-require_once '../../../includes/init.php';
+require_once __DIR__ . '/../includes/init.php';
+include __DIR__ . '/../app/views/layouts/header.php';
+include __DIR__ . '/../app/views/layouts/footer.php';
 
 header('Content-Type: application/json');
 
