@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../includes/init.php'; //dibuat
+require_once __DIR__ . '/../includes/init.php'; //dibuat dir
 
 // Redirect if already logged in
 if(isLoggedIn()) {
