@@ -24,7 +24,7 @@ FlintGo adalah platform super app berbasis PHP yang terinspirasi dari Gojek, men
 
 ### Instalasi Cepat (XAMPP)
 
-1. Extract project ke `C:\xampp\htdocs\Fl`
+1. Extract project ke `C:\xampp\htdocs\FlintGo`
 2. Buka phpMyAdmin: `http://localhost/phpmyadmin`
 3. Import database dari `database/schema.sql`
 4. Buka browser: `http://localhost/flintgo-php/public/`
