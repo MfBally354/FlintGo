@@ -28,10 +28,10 @@
     
     <style>
         :root {
-            --primary-color: <?php echo COLOR_PRIMARY; ?>;
-            --secondary-color: <?php echo COLOR_SECONDARY; ?>;
-            --background-color: <?php echo COLOR_BACKGROUND; ?>;
-            --text-color: <?php echo COLOR_TEXT; ?>;
+            --primary-color: #10B981;
+            --secondary-color: #059669;
+            --background-color: #F8FAFC;
+            --text-color: #0F172A;
         }
     </style>
 </head>
