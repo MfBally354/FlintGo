@@ -3,7 +3,7 @@
  * FlintGo - Main Configuration File
  */
 
-// Config adalah tempat mengatur dimana bakal 
+// Config adalah tempat mengatur dimana bakal di-host
 
 // Application settings
 define('APP_NAME', 'FlintGo');
