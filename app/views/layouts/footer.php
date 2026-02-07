@@ -1,3 +1,9 @@
+<?php
+/**
+ * FlintGo - Footer Layout
+ * Path: app/views/layouts/footer.php
+ */
+?>
 <!-- Footer -->
 <footer class="footer bg-dark text-white mt-5">
     <div class="container py-5">
