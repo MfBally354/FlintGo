@@ -1,0 +1,76 @@
+# FlintGo Docker Compose Configuration
+version: '3.8'
+
+services:
+  # MySQL Database Service
+  mysql:
+    image: mysql:8.0
+    container_name: flintgo-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: flintgo_db
+      MYSQL_USER: flintgo_user
+      MYSQL_PASSWORD: flintgo_pass
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./database/schema.sql:/docker-entrypoint-initdb.d/schema.sql
+    networks:
+      - flintgo-network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-proot"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # PHP Apache Web Service
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: flintgo-web
+    restart: unless-stopped
+    ports:
+      - "8090:80"
+    volumes:
+      - .:/var/www/html
+      - ./uploads:/var/www/html/uploads
+    depends_on:
+      mysql:
+        condition: service_healthy
+    environment:
+      DB_HOST: mysql
+      DB_USER: flintgo_user
+      DB_PASS: flintgo_pass
+      DB_NAME: flintgo_db
+      DB_PORT: 3306
+    networks:
+      - flintgo-network
+
+  # phpMyAdmin Service (Optional)
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: flintgo-phpmyadmin
+    restart: unless-stopped
+    ports:
+      - "8091:80"
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+      PMA_USER: root
+      PMA_PASSWORD: root
+      UPLOAD_LIMIT: 50M
+    depends_on:
+      - mysql
+    networks:
+      - flintgo-network
+
+networks:
+  flintgo-network:
+    driver: bridge
+
+volumes:
+  mysql_data:
+    driver: local
