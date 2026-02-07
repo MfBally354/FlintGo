@@ -2,7 +2,7 @@
 /**
  * FlintGo - Database Configuration
  */
-// Membuat 
+// Membuat sebuah
 // Database credentials
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
