@@ -3,7 +3,7 @@
  * FlintGo - Main Configuration File
  */
 
-//Config
+// Config 
 
 // Application settings
 define('APP_NAME', 'FlintGo');
