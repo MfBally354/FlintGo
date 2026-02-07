@@ -3,6 +3,8 @@
  * FlintGo - Main Configuration File
  */
 
+
+
 // Application settings
 define('APP_NAME', 'FlintGo');
 define('APP_VERSION', '1.0.0');
