@@ -34,7 +34,7 @@ FlintGo adalah platform super app berbasis PHP yang terinspirasi dari Gojek, men
 ## 📂 Struktur Project
 
 ```
-Flint/
+FlintGO/
 ├── public/              # Document root
 │   ├── index.php       # Landing page  
 │   ├── dashboard.php   # Main dashboard
