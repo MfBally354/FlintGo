@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../includes/init.php'; //dibuat dir agar tidak error 
+require_once __DIR__ . '/../includes/init.php'; //dibuat dir agar tidak error OK
 
 // Redirect if already logged in
 if(isLoggedIn()) {
