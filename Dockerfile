@@ -46,8 +46,21 @@ ENV APACHE_DOCUMENT_ROOT=/var/www/html/public
 RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
 RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
 
-# Copy custom Apache configuration
-COPY docker/apache/000-default.conf /etc/apache2/sites-available/000-default.conf
+# Create Apache configuration inline
+RUN echo '<VirtualHost *:80>\n\
+    ServerAdmin webmaster@flintgo.local\n\
+    DocumentRoot /var/www/html/public\n\
+    <Directory /var/www/html/public>\n\
+        Options Indexes FollowSymLinks\n\
+        AllowOverride All\n\
+        Require all granted\n\
+    </Directory>\n\
+    Header set X-Content-Type-Options "nosniff"\n\
+    Header set X-Frame-Options "SAMEORIGIN"\n\
+    Header set X-XSS-Protection "1; mode=block"\n\
+    ErrorLog ${APACHE_LOG_DIR}/flintgo-error.log\n\
+    CustomLog ${APACHE_LOG_DIR}/flintgo-access.log combined\n\
+</VirtualHost>' > /etc/apache2/sites-available/000-default.conf
 
 # Expose port 80
 EXPOSE 80
