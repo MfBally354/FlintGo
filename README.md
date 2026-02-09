@@ -86,7 +86,7 @@ Edit `app/config/database.php`:
 ```php
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
-define('DB_PASS', '[Sandi]');
+define('DB_PASS', '[Sandi mysql kamu]');
 define('DB_NAME', 'flintgo_db');
 ```
 
