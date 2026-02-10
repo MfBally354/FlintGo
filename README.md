@@ -30,7 +30,7 @@ FlintGo adalah platform super app berbasis PHP yang terinspirasi dari Gojek, men
 4. Buka browser: `http://localhost/FlintGo/public/`
 
 **Lihat file `INSTALLATION_GUIDE.md` untuk panduan lengkap!**
-
+ 
 ## 📂 Struktur Project
 
 ```
