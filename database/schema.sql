@@ -8,7 +8,7 @@ DROP DATABASE IF EXISTS flintgo_db;
 CREATE DATABASE flintgo_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE flintgo_db;
 
--- ====================================================================
+-- =====================================================================
 -- USERS & AUTHENTICATION
 -- =====================================================================
 
