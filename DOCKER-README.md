@@ -19,7 +19,7 @@ docker compose version # Example: Docker Compose version v5.0.2
 ### Metode 1: Menggunakan Makefile (Recommended)
 
 ```bash
-# Gunakan Makefile agar 
+# Gunakan Makefile agar simpel
 # Install dan jalankan untuk pertama kali
 make install # Ini dilakukan saat pertama kali saja
 
