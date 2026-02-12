@@ -10,7 +10,7 @@ Pastikan Anda sudah menginstall:
 
 Cek versi Docker Anda:
 ```bash
-docker --version
+docker -v
 docker-compose --version
 ```
 
