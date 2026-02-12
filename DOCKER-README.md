@@ -11,7 +11,7 @@ Pastikan Anda sudah menginstall:
 Cek versi Docker Anda:
 ```bash
 docker -v
-docker-compose -v
+docker compose version
 ```
 
 ## 🚀 Quick Start
