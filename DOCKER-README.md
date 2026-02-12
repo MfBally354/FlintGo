@@ -20,7 +20,7 @@ docker compose version # Example: Docker Compose version v5.0.2
 
 ```bash
 # Install dan jalankan untuk pertama kali
-make install
+make install #
 
 # Atau step by step:
 make build    # Build Docker images
