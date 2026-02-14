@@ -3,7 +3,7 @@
 
 .PHONY: help build up down restart logs shell mysql clean install
 
-# Default tar
+# Default ta
 help:
 	@echo "==================== FlintGo Docker Commands ===================="
 	@echo "make build      - Build Docker images"
