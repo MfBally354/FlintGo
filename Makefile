@@ -19,7 +19,7 @@ help:
 
 # Build Docker images
 build:
-	@echo "🔨 Building Docker images...."
+	@echo "🔨 Building Docker images....."
 	docker-compose build
 
 # Start containers
