@@ -223,7 +223,7 @@ sudo chmod 777 -R flintgo-php/uploads/
 **Solusi:**
 - Clear browser cache
 - Check path di `app/views/layouts/header.php`
-- Pastikan folder `public/assets/` ada di da
+- Pastikan folder `public/assets/` ada di dal
 
 ---
 
