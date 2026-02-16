@@ -74,7 +74,7 @@ install:
 	sleep 15
 	@echo "✅ Installation selesai!"
 	@echo ""
-	@echo "==================== FlintGo Siap Digunakan ===================="
+	@echo "==================== FlintGo Siap Digunakan ====================="
 	@echo "   🌐 Website: http://localhost:8090"
 	@echo "   🗄️  phpMyAdmin: http://localhost:8091"
 	@echo "   🔌 MySQL Port: 3307"
