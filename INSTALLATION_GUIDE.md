@@ -220,7 +220,7 @@ sudo chmod 777 -R flintgo-php/uploads/
 ```
 
 ### CSS/JS tidak load
-**Solusin:**
+**Solusiny:**
 - Clear browser cache
 - Check path di `app/views/layouts/header.php`
 - Pastikan folder `public/assets/` ada didalam perangkat
