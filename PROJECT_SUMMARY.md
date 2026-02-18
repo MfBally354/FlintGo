@@ -2,7 +2,7 @@
 
 ## ✅ Project Selesai Dibuat!
 
-Selamat! Website **FlintGo Super App** berbasis PHP sudah berhasil dibuat dengan lengkap dan siap digunakan dimana s.
+Selamat! Website **FlintGo Super App** berbasis PHP sudah berhasil dibuat dengan lengkap dan siap digunakan dimana sa.
 
 ---
 
