@@ -11,7 +11,7 @@ Selamat! Website **FlintGo Super App** berbasis PHP sudah berhasil dibuat dengan
 ### 1. **Struktur Folder Lengkap**
 ✅ Menggunakan pola MVC (Model-View-Controller)
 ✅ Terorganisir dengan baik
-✅ Mudah untuk dikembangkan
+✅ Mudah untuk dikembangkan d
 
 ### 2. **File-File Utama**
 
