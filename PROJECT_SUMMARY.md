@@ -19,7 +19,7 @@ Selamat! Website **FlintGo Super App** berbasis PHP sudah berhasil dibuat dengan
 - ✅ `index.php` - Landing page dengan hero section
 - ✅ `dashboard.php` - Dashboard utama (seperti Gojek atau Grab)
 - ✅ `ride.php`, `car.php`, `food.php`, `mart.php` - Halaman layanan
-- ✅ `profile.php`, `order.php` - Halaman user
+- ✅ `profile.php`, `order.php` - Halaman 
 
 #### **Konfigurasi**:
 - ✅ `app/config/database.php` - Setup database
